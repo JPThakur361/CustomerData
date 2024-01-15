@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "CustomerDataEntry": {
+    "CustomerApplication": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -11,11 +11,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/customer-data-entry",
+            "outputPath": "dist/customer-application",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -27,12 +27,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -51,9 +46,12 @@
               "outputHashing": "all"
             },
             "development": {
+              "buildOptimizer": false,
               "optimization": false,
+              "vendorChunk": true,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "namedChunks": true
             }
           },
           "defaultConfiguration": "production"
@@ -62,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "CustomerDataEntry:build:production"
+              "browserTarget": "CustomerApplication:build:production"
             },
             "development": {
-              "buildTarget": "CustomerDataEntry:build:development"
+              "browserTarget": "CustomerApplication:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "CustomerDataEntry:build"
+            "browserTarget": "CustomerApplication:build"
           }
         },
         "test": {
@@ -98,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "b4529bab-bfe8-4480-9990-2a8f6e13d58e"
+    "analytics": "b5eaeecb-6051-42f4-83d1-dc181ad603d9"
   }
 }
