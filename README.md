@@ -13,6 +13,8 @@ Some basic steps :
 2. delete unnecessary code from html file .
 3. added some custom code to create table and get i/o from ui.
 4. face one issue please makesure you have added formsmodule to the module class.
+5. here is the output of day 2 progress ![image](https://github.com/JPThakur361/CustomerData/assets/22912527/3d45de63-4385-4966-9267-61d0fd0e02ff)
+
    
    
     
