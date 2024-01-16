@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import{Customer} from './Customer.Model'
 @Component({
-  selector: 'app-root',
-  templateUrl: './Customer.View.html',
+
+  templateUrl: './Customer.CustomerView.html',
 })
 export class CustomerComponent {
   title = 'CustomerApplication';
