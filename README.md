@@ -14,6 +14,11 @@ Some basic steps :
 3. added some custom code to create table and get i/o from ui.
 4. face one issue please makesure you have added formsmodule to the module class.
 5. here is the output of day 2 progress ![image](https://github.com/JPThakur361/CustomerData/assets/22912527/3d45de63-4385-4966-9267-61d0fd0e02ff)
+@Day3 : 
+1. Implement the Lazy Loading archetecture. 
+2. Create the routing for rach model to floow the lazy loading arch. 
+3.  add modelue to each component.
+4.  add forChild , loadChilderen, , Add attribute etc.  
 
    
    
