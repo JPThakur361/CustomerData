@@ -1,9 +1,9 @@
 import { NgModule, importProvidersFrom } from '@angular/core';
 
-import{FormsModule} from '@angular/forms'
+import{FormsModule,ReactiveFormsModule} from '@angular/forms'
 import { RouterModule } from '@angular/router';
 import { CustomerComponent } from './Customer.Customercomponent';
-import { CustomerRoutes } from '../Routing/Customer.CustomerRouting.module copy 2';
+import { CustomerRoutes } from '../Routing/Customer.CustomerRouting.module';
 import { CommonModule } from '@angular/common';
 
 
@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     RouterModule.forChild(CustomerRoutes),
-    CommonModule,FormsModule
+    CommonModule,ReactiveFormsModule,FormsModule
     
   ],
   providers: [],
