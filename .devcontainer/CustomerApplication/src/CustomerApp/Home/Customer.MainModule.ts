@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MasterPageComponent } from './Customer.Mastercomponent';
 import { HomeComponent } from './Customer.Homecomponent';
 import { MainRoutes } from '../Routing/Customer.MainRouting.module';
+import { BaseLogger,ConsoleLogger,DbLogger, FileLogger } from '../Utility/Customer.Logger';
 
 
 
@@ -19,7 +20,10 @@ import { MainRoutes } from '../Routing/Customer.MainRouting.module';
     FormsModule
     
   ],
-  providers: [],
+  providers: [{
+     provide: BaseLogger,
+     useClass: ConsoleLogger
+  }],
   bootstrap: [MasterPageComponent]
 })
 export class MainModule { }
