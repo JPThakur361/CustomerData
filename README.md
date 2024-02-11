@@ -1,25 +1,38 @@
 # CustomerData
-Day 1: Setup Environment setup for Angular js. 
-Some basic steps : 
-1. Once you create your repo open the codespace
-2. setup .devcontainer to  insall latest (your choice) npm version.
-3. Run the following command [npm install -g @angular/cli] to install Angular CLI.
-4. After that create the root [ ng new CustomerDataEntry] {use the following command} dir. to add all you ng code files there.
-5. Now open your newly create dir in terminal and run the following command [ npm start / ng serve].
-6. The above command will run the app. on localhost.
-7. Setup is done.attaching the @image ![image](https://github.com/JPThakur361/CustomerData/assets/22912527/343a9f22-6134-42d3-95c5-949d5bcc19fd)
-#Day 2 :
-1. added Customer.Model.ts as a model class.
-2. delete unnecessary code from html file .
-3. added some custom code to create table and get i/o from ui.
-4. face one issue please makesure you have added formsmodule to the module class.
-5. here is the output of day 2 progress ![image](https://github.com/JPThakur361/CustomerData/assets/22912527/3d45de63-4385-4966-9267-61d0fd0e02ff)
-@Day3 : 
-1. Implement the Lazy Loading archetecture. 
-2. Create the routing for rach model to floow the lazy loading arch. 
-3.  add modelue to each component.
-4.  add forChild , loadChilderen, , Add attribute etc.  
+Repository Creation: Begin by creating a new repository for your AngularJS project. Once created, open it in a code space.
 
+.devcontainer Configuration: Set up the .devcontainer file to install the latest version of npm. This ensures consistency across environments.
+
+Angular CLI Installation: Run the command npm install -g @angular/cli to install Angular CLI globally. This tool will aid in creating and managing Angular projects.
+
+Project Initialization: Create a new directory for your Angular project. Use the command ng new CustomerDataEntry to generate a new Angular project named CustomerDataEntry within the directory.
+
+Code Organization: Place all your Angular code files within the root directory of the CustomerDataEntry project.
+
+Starting the Development Server: Navigate to the newly created directory in the terminal and execute the command npm start or ng serve. This command will start the development server, and your Angular app will be accessible via localhost.
+
+With these steps completed, your AngularJS environment setup is finished. If you encounter any issues or need further assistance, feel free to reach out. Additionally, please find the attached image showcasing the Customer Data project for reference.
+Setup is done.attaching the @image ![image](https://github.com/JPThakur361/CustomerData/assets/22912527/343a9f22-6134-42d3-95c5-949d5bcc19fd) 
+
+
+Added Customer.Model.ts as a model class to define the structure of the customer data.
+Removed unnecessary code from the HTML file to clean up the project.
+Implemented custom code to create a table and handle input/output from the user interface.
+Encountered an issue. Please ensure that you have added FormsModule to the module class to enable form functionality.
+Attached is the output of the Day 2 progress:
+
+
+The project is advancing smoothly, but let me know if you need assistance with any specific tasks or if there are any further issues to address
+
+Implemented Lazy Loading architecture to enhance the performance of the application by loading modules on demand rather than upfront.
+
+Created routing for each module to follow the Lazy Loading architecture. This ensures that modules are loaded only when needed, improving the overall loading time of the application.
+
+Added module imports to each component to establish the necessary dependencies and ensure proper functionality.
+
+Utilized Angular's routing features such as forChild, loadChildren, and added necessary attributes to optimize routing and module loading.
+
+Implementing Lazy Loading and optimizing routing is crucial for improving the efficiency and responsiveness of the application. Let me know if you need further clarification or assistance with any of these tasks.
    
    
     
